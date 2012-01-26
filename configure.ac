@@ -14,7 +14,7 @@ glib_modules="\
   glib-2.0 >= $GLIB_VERSION,    \
   gobject-2.0 >= $GLIB_VERSION"
 PKG_CHECK_MODULES(GLIB, $glib_modules)
-PACKAGE_CFLAGS="-Wl,--no-as-needed -std=c99 $GLIB_CFLAGS"
+PACKAGE_CFLAGS="-Wall -Werror -Wl,--no-as-needed -std=c99 $GLIB_CFLAGS"
 PACKAGE_LIBS="$GLIB_LIBS"
 
 AC_SUBST(PACKAGE_CFLAGS)
@@ -28,6 +28,7 @@ AC_SUBST(PACKAGE_LIBS)
 
 AC_CONFIG_FILES([
 01_inheritance/Makefile
+02_signals/Makefile
 Makefile])
 
 AC_OUTPUT
