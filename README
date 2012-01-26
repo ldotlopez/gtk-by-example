@@ -1,0 +1,11 @@
+GTK+ by example
+===============
+
+This project aims to provide basic examples for common task like inherit from
+a GObject based class, implement properties, signals, interfaces, etc...
+
+Basic knowledge of C and GObject type system is asumed. This project is for
+regular developers using both GLib and GTK+ libraries who want to implement
+their own classes in the right one. One specific topic is covered in each
+example.
+
