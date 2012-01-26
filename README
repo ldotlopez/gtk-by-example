@@ -9,3 +9,6 @@ regular developers using both GLib and GTK+ libraries who want to implement
 their own classes in the right one. One specific topic is covered in each
 example.
 
+BTW. the so-called 'boilerplate code' in most classes is generated using the
+GObject generator: http://burtonini.com/cgi/gobject.py
+
